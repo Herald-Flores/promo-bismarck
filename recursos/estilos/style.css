@@ -686,7 +686,7 @@ input[type="checkbox"] {
     }
 
     .content-formulario {
-        height: 560px;
+        height: 640px;
         width: 90%;
         padding: 2rem 1rem;
         margin: 0 auto;
@@ -694,7 +694,7 @@ input[type="checkbox"] {
     }
 
     .cont-form {
-        height: 650px;
+        height: 720px;
     }
 
     .footer {
@@ -741,12 +741,12 @@ input[type="checkbox"] {
         background: #EC2234;
         margin-left: 0rem;
         margin-right: 0rem;
-        height: 630px;
+        height: 760px;
     } 
     .content-formulario {
         padding: 1.5rem 1rem;
         width: 310px;
-        height: 540px;
+        height: 665px;
         margin-left: 0rem;
         margin: 0 auto;
         margin-top: 8rem;
@@ -825,7 +825,7 @@ input[type="checkbox"] {
         padding-top: 2rem;
     }
     .cont-form {
-        height: 720px;
+        height: 780px;
         padding: 2rem 1rem;
     }
     .btn-naranja2{
