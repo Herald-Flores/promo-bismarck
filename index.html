@@ -21,7 +21,7 @@
         <div class="content-menu">
             <div class="row">
                 <div class="col-xl-8 col-lg-8 col-md-8 col-sm-7 col-3">
-                    <img src="recursos/img/logo.png" alt="Bmarkt Studio" class="pull-left logo" id="bicon">
+                    <img src="recursos/img/logo.jpg" alt="Bmarkt Studio" class="pull-left logo" id="bicon">
                 </div>
                 <div class="col-xl-4 col-lg-4 col-md-4 col-sm-5 col-9">
                     
@@ -32,11 +32,11 @@
         <!--Seccion de formuario-->
         <div class="row-hd cont-formulario">
             <div class="row">
-                <div class="col-xl-7 col-lg-7 col-md-6 col-sm-12 col-12">
+                <div class="col-lg-8 col-md-6 col-sm-12 col-12">
 
                 </div>
 
-                <div class="col-xl-5 col-lg-5 col-md-6 col-sm-12 col-12">
+                <div class="col-lg-4 col-md-6 col-sm-12 col-12">
                     <div class="content-formulario">
                         <p class="title-form">LET'S WORK TOGETHER</p>
                         <form action="api/api.php" method="POST" enctype="multipart/form-data">
@@ -55,17 +55,17 @@
 
                             <div class="form-hd">
                                 <i class="fa fa-building ico-form"></i>
-                                <input type="text" id="input-Corporation" class="form-control">
-                                <label for="input-Corporation" data-error="wrong" data-success="right" name="Company" required>Company</label>
+                                <input type="text" id="input-Corporation" class="form-control" name="company" required>
+                                <label for="input-Corporation" data-error="wrong" data-success="right">Company</label>
                             </div>
 
                             <div class="form-hd">
-                                <i class="fa fa-building ico-form"></i>
-                                <input type="text" id="input-Corporation2" class="form-control">
-                                <label for="input-Corporation2" data-error="wrong" data-success="right" name="Company2" required>Company</label>
+                                <i class="fa fa-phone ico-form"></i>
+                                <input type="tel" id="input-phone" class="form-control"name="phone" required>
+                                <label for="input-phone" data-error="wrong" data-success="right">Phone</label>
                             </div>
                             
-                            <textarea class="form-control" rows="5" id="mensaje" placeholder="Enter the description of your project" name="proyect" required></textarea>                        
+                            <textarea class="form-control textarea1" rows="3" id="mensaje" placeholder="Enter the description of your project" name="proyect" required></textarea>                        
                             
                             <div class="content-button">
                                 <input type="checkbox" name="checkbox-1" id="checkbox1" class="has-warning" required>
@@ -321,10 +321,11 @@
                                     <label for="input-email3" data-error="wrong" data-success="right" name="correo" required>Insert your e-mail</label>
                                 </div>
 
+
                                 <div class="form-hd">
-                                    <i class="fa fa-at ico-form"></i>
-                                    <input type="email" id="input-email2" class="form-control">
-                                    <label for="input-email2" data-error="wrong" data-success="right" name="correo" required>Insert your e-mail</label>
+                                    <i class="fa fa-phone ico-form"></i>
+                                    <input type="tel" id="input-phone2" class="form-control"name="telefono" required>
+                                    <label for="input-phone2" data-error="wrong" data-success="right">Phone</label>
                                 </div>
 
                             </div>
@@ -338,7 +339,7 @@
                             <div class="col-lg-10 col-md-12 col-12">
                                 <br>
                                 <input type="checkbox" name="checkbox-2" id="checkbox2" class="has-warning" required>
-                                <label for="checkbox2" data-toggle="tooltip" data-placement="top" title="Favor seleccionar que acepta términos y condiciones">
+                                <label class="label-check2" for="checkbox2" data-toggle="tooltip" data-placement="top" title="Favor seleccionar que acepta términos y condiciones">
                                     Yes. I would like to subscribe and I accept the <span class="red"> Terms and Conditions</span> <br>
                                     We will not forward your email address to any third party
                                 </label>         

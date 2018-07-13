@@ -10,7 +10,8 @@
     // $message = @trim(stripslashes($objDatos->msj));
     $name = $_POST['name'];
     $email = $_POST['email'];
-    $company = $_POST['Company'];
+    $empresa = $_POST['company'];
+    $phone =$_POST['phone'];
     $proyect = $_POST['proyect'];
     echo $name;
 
@@ -22,12 +23,14 @@ $mail->CharSet = 'UTF-8';
 
 $body = <<<EOT
 Titular: $name <br>
-Empresa: $company <br>
+Empresa: $empresa <br>
+Teléfono: $phone <br>
 Correo: $email <br>
 
 -------------------------------------------<br>
 <br>
 $proyect
+<br>
 EOT;
 
 $mail->IsSMTP();
