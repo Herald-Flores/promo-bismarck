@@ -20,11 +20,12 @@
         <!--Cabecera-->
         <div class="content-menu">
             <div class="row">
-                <div class="col-xl-8 col-lg-8 col-md-8 col-sm-8 col-3">
+                <div class="col-xl-8 col-lg-8 col-md-8 col-sm-7 col-3">
                     <img src="recursos/img/logo.png" alt="Bmarkt Studio" class="pull-left logo" id="bicon">
                 </div>
-                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-9">
-                    <p class="contacto"> <span class="email"><i class="fa fa-envelope"></i> Email us:</span> contacto@bmarkt.studio</p>
+                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-5 col-9">
+                    
+                    <p class="contacto"> <span class="email"><img src="recursos/img/email.png" alt="" class="mail-ico"> Email us:</span> contacto@bmarkt.studio</p>
                 </div>
             </div>
         </div>
@@ -38,31 +39,40 @@
                 <div class="col-xl-5 col-lg-5 col-md-6 col-sm-12 col-12">
                     <div class="content-formulario">
                         <p class="title-form">LET'S WORK TOGETHER</p>
-                        <form action="api.php" method="POST" enctype="multipart/form-data">
+                        <form action="api/api.php" method="POST" enctype="multipart/form-data">
             
                             <div class="form-hd">
                                 <i class="fa fa-user ico-form"></i>
-                                <input type="text" id="input-name" class="form-control">
-                                <label for="input-name">Insert your name</label>
+                                <input type="text" id="input-name" class="form-control" name="name" required>
+                                <label for="input-name" data-error="wrong" data-success="right">Insert your name</label>
                             </div>
 
                             <div class="form-hd">
                                 <i class="fa fa-at ico-form"></i>
-                                <input type="email" id="input-email" class="form-control">
-                                <label for="input-email">Insert your e-mail</label>
+                                <input type="email" id="input-email" class="form-control" name="email" required>
+                                <label for="input-email" data-error="wrong" data-success="right">Insert your e-mail</label>
                             </div>
 
                             <div class="form-hd">
                                 <i class="fa fa-building ico-form"></i>
                                 <input type="text" id="input-Corporation" class="form-control">
-                                <label for="input-Corporation">Company</label>
+                                <label for="input-Corporation" data-error="wrong" data-success="right" name="Company" required>Company</label>
+                            </div>
+
+                            <div class="form-hd">
+                                <i class="fa fa-building ico-form"></i>
+                                <input type="text" id="input-Corporation2" class="form-control">
+                                <label for="input-Corporation2" data-error="wrong" data-success="right" name="Company2" required>Company</label>
                             </div>
                             
-                            <textarea class="form-control" rows="5" id="mensaje" placeholder="Enter the description of your project"></textarea>                        
+                            <textarea class="form-control" rows="5" id="mensaje" placeholder="Enter the description of your project" name="proyect" required></textarea>                        
                             
                             <div class="content-button">
-                                <input type="checkbox" name="checkbx" id="checkbox1" class="has-warning" required>
-                                <label for="checkbox1" data-toggle="tooltip" data-placement="top" title="Favor seleccionar que acepta términos y condiciones">Acepto los términos y condiciones</label>
+                                <input type="checkbox" name="checkbox-1" id="checkbox1" class="has-warning" required>
+                                <label for="checkbox1" data-toggle="tooltip" data-placement="top" title="Favor seleccionar que acepta términos y condiciones">
+                                    Yes. I would like to subscribe and I accept the <span class="red"> Terms and Conditions</span> <br>
+                                    We will not forward your email address to any third party
+                                </label>
             
                                 <br><button type="submit" class="btn btn-naranja">CONTACT</button>
                             </div>
@@ -292,42 +302,46 @@
                             <div class="col-md-6 col-12">
                                 <div class="form-hd">
                                     <i class="fa fa-user ico-form"></i>
-                                    <input type="text" id="input-name2" class="form-control">
+                                    <input type="text" id="input-name2" class="form-control" name="nombre" required>
                                     <label for="input-name2">Insert your name</label>
                                 </div>
-                        
-                                <div class="form-hd">
-                                    <i class="fa fa-at ico-form"></i>
-                                    <input type="email" id="input-email2" class="form-control">
-                                    <label for="input-email2">Insert your e-mail</label>
-                                </div>
-                            </div>
-                        
-                            <div class="col-md-6 col-12">
-            
+
                                 <div class="form-hd">
                                     <i class="fa fa-user ico-form"></i>
                                     <input type="text" id="input-name3" class="form-control">
-                                    <label for="input-name3">Insert your name</label>
+                                    <label for="input-name3" data-error="wrong" data-success="right" name="empresa" required>Company</label>
                                 </div>
-                                        
+                        
+                            </div>
+                        
+                            <div class="col-md-6 col-12">
                                 <div class="form-hd">
                                     <i class="fa fa-at ico-form"></i>
                                     <input type="email" id="input-email3" class="form-control">
-                                    <label for="input-email3">Insert your e-mail</label>
+                                    <label for="input-email3" data-error="wrong" data-success="right" name="correo" required>Insert your e-mail</label>
                                 </div>
+
+                                <div class="form-hd">
+                                    <i class="fa fa-at ico-form"></i>
+                                    <input type="email" id="input-email2" class="form-control">
+                                    <label for="input-email2" data-error="wrong" data-success="right" name="correo" required>Insert your e-mail</label>
+                                </div>
+
                             </div>
                         </div>  
             
                         <div class="row justify-content-center">
                             <div class="col-md-12 col-12">
-                                <textarea class="form-control" rows="5" id="mensaje" placeholder="Enter the description of your project"></textarea>
+                                <textarea class="form-control" rows="5" id="mensaje" placeholder="Enter the description of your project" name="proyecto" required></textarea>
                             </div>
             
-                            <div class="col-md-10 col-12">
+                            <div class="col-lg-10 col-md-12 col-12">
                                 <br>
-                                <input type="checkbox" name="checkbx" id="checkbox2" class="has-warning" required>
-                                <label for="checkbox2" data-toggle="tooltip" data-placement="top" title="Favor seleccionar que acepta términos y condiciones">Acepto los términos y condiciones</label>         
+                                <input type="checkbox" name="checkbox-2" id="checkbox2" class="has-warning" required>
+                                <label for="checkbox2" data-toggle="tooltip" data-placement="top" title="Favor seleccionar que acepta términos y condiciones">
+                                    Yes. I would like to subscribe and I accept the <span class="red"> Terms and Conditions</span> <br>
+                                    We will not forward your email address to any third party
+                                </label>         
                             </div>                           
                         </div> 
                         
@@ -343,16 +357,16 @@
 
         <div class="row-hd footer">
             <div class="row justify-content-center">
-                <div class="col-md-2 col-3">
+                <div class="col-md-2 col-sm-3 col-3">
                     <img src="recursos/img/B.png" alt="Bmarkt Studio" class="d-block logo-footer">
                 </div>
-                <div class="col-md-6 col-9">
+                <div class="col-md-6 col-sm-9 col-9">
                     <p class="txt-footer"> 
-                        <span class="email"><i class="fa fa-envelope"></i> Email us:</span> contacto@bmarkt.studio
+                        <span class="email"><img src="recursos/img/email-blanco.png" alt="" class="mail-ico"> Email us:</span> contacto@bmarkt.studio
                     </p>
                 </div>
 
-                <div class="col-md-4 col-12">
+                <div class="col-md-4 col-sm-12 col-12">
                     <p class="txt-copy">
                         2018 BIGBANG STUDIO. TODOS LOS DERECHOS RESERVADOS
                     </p>

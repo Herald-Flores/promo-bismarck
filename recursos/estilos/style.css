@@ -36,10 +36,14 @@ body{
 .email{
     font-weight: 500;
 }
+.mail-ico{
+    width: 40px;
+    margin-top: -.1rem;
+}
 
 .cont-formulario {
     background: #EC2234;
-    height: 560px;
+    height: 700px;
 }
 .content-formulario{
     background: #fff;
@@ -92,7 +96,6 @@ input[type=email]{
     padding-left: 2.2rem;
     width: 88%;
 }
-
 .form-hd{
     position: relative;
     margin-bottom: 1.5rem;
@@ -127,7 +130,63 @@ input[type=text]:focus:not([readonly]),input[type=password]:focus:not([readonly]
 .form-hd i.active {
     color: #4285F4;
 }
+/*estilos de los checbox*/
+input[type=checkbox], input[type=radio] {
+    box-sizing: border-box;
+    padding: 0;
+}
+[type=checkbox], [type=radio] {
+    position: absolute;
+    left: -9999px;
+    visibility: hidden;
+}
+input[type="checkbox"] {
+    margin: 3px 3px 3px 4px;
+}
+[type=checkbox]+label, [type=radio]+label {
+    position: relative;
+    padding-left: 25px;
+    cursor: pointer;
+    display: inline-block;
+    height: 25px;
+    line-height: 25px;
+    font-size: 1rem;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -ms-user-select: none;
+}
+[type=checkbox]+label:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 17px;
+    height: 17px;
+    z-index: 0;
+    border: 1.5px solid #8a8a8a;
+    border-radius: 1px;
+    margin-top: 2px;
+    -webkit-transition: .2s;
+    transition: .2s;
+}
 
+[type=checkbox]:checked+label:before {
+    top: -4px;
+    left: -3px;
+    width: 12px;
+    height: 22px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: transparent #F15A24 #F15A24 transparent;
+    -webkit-transform: rotate(40deg);
+    -ms-transform: rotate(40deg);
+    transform: rotate(40deg);
+    -webkit-backface-visibility: hidden;
+    -webkit-transform-origin: 100% 100%;
+    -ms-transform-origin: 100% 100%;
+    transform-origin: 100% 100%;
+}
 .btn {
     font-size: 13PX;
     padding: 8PX 30PX;
@@ -352,8 +411,7 @@ input[type=text]:focus:not([readonly]),input[type=password]:focus:not([readonly]
     color: #fff;
     padding: 1rem .5rem;
     height: 85px;
-    margin-left: -7.45rem;
-    margin-right: -7rem;
+
 }
 .logo-footer{
     margin: 0 auto!important;
@@ -526,9 +584,25 @@ input[type=text]:focus:not([readonly]),input[type=password]:focus:not([readonly]
 }
 
 @media screen and (max-width: 1024px){
+    .h3-responsive {
+        font-size: 160%;
+    }
+
+    .row-hd .row {
+        margin-right: 0rem;
+        margin-left: 4rem;
+    }
+
     .txt-info{
         width: 280px;
         margin: 0 auto;
+    }
+    .content-plan {
+        width: 1000px;
+        margin-left: 2.4rem;
+    }
+    .footer {
+        height: 88px;
     }
 }
 @media screen and (max-width: 768px){
@@ -544,13 +618,16 @@ input[type=text]:focus:not([readonly]),input[type=password]:focus:not([readonly]
         margin-left: -2.45rem;
     }
     .cont-formulario {
-        height: 650px;
+        height: 720px;
     }
     .content-formulario {
         margin-top: 6rem;
-        height: 570px;
-        width: 98%;
+        height: 660px;
+        width: 100%;
         padding: 2rem 1rem;
+    }
+    .content-icons{
+        margin: 0 auto;
     }
     .title-form {
         font-size: 1.4em;
@@ -590,13 +667,47 @@ input[type=text]:focus:not([readonly]),input[type=password]:focus:not([readonly]
     .txt-frase {
         width: 600px;
     }
+    .cont-form {
+        height: 580px;
+    }
 
     .footer {
         height: 104px;
     }
+    .logo-footer {
+        margin-top: .5rem!important;
+    }
 }
 
+@media screen and (max-width: 650px){
+    .row-hd {
+        width: 125.6%;
+        margin-left: -4.1rem;
+    }
+
+    .content-formulario {
+        height: 560px;
+        width: 90%;
+        padding: 2rem 1rem;
+        margin: 0 auto;
+        margin-top: 6rem;
+    }
+
+    .cont-form {
+        height: 650px;
+    }
+
+    .footer {
+        height: 134px;
+    }
+    .txt-copy{
+        text-align: center;
+    }
+}
 @media screen and (max-width: 580px){
+    .h3-responsive {
+        font-size: 130%;
+    }
     .row-hd .row{
         margin-right: 0!important; 
         margin-left: 0!important; 
@@ -633,11 +744,17 @@ input[type=text]:focus:not([readonly]),input[type=password]:focus:not([readonly]
         height: 630px;
     } 
     .content-formulario {
-        margin-top: 8rem;
         padding: 1.5rem 1rem;
-        width: 330px;
+        width: 310px;
+        height: 540px;
         margin-left: 0rem;
+        margin: 0 auto;
+        margin-top: 8rem;
     }
+    .title-form {
+        font-size: 1.1em;
+    }
+
     .title-work {
         color: #616161;
         margin: 1rem auto;
@@ -677,13 +794,15 @@ input[type=text]:focus:not([readonly]),input[type=password]:focus:not([readonly]
         padding-bottom: 0rem;
         padding-top: .5rem;
         width: 300px;
-        height: 1710px;
+        height: 1560px;
     }
     .plan {
         margin-top: 0rem;
+        width: 300px;
     }
     .plan2 {
         margin-top: 0rem;
+        width: 300px;
     }
     .cont-frase {
         height: 620px;
@@ -706,8 +825,7 @@ input[type=text]:focus:not([readonly]),input[type=password]:focus:not([readonly]
         padding-top: 2rem;
     }
     .cont-form {
-        height: 700px;
-        height: 680px;
+        height: 720px;
         padding: 2rem 1rem;
     }
     .btn-naranja2{
