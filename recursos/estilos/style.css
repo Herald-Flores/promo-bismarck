@@ -3,7 +3,7 @@ body{
     color: #616161;
 }
 .red{
-    color: #EC2234;
+    color: #C1393C;
 }
 .h3-responsive {
     font-size: 200%;
@@ -30,7 +30,7 @@ body{
 }
 .contacto{
     color: #757575;
-    font-size: 1em;
+    font-size: .9em;
     font-weight: 700;
     margin-top: 1.2rem;
 }
@@ -39,7 +39,7 @@ body{
 }
 .mail-ico{
     width: 40px;
-    margin-top: -.1rem;
+    margin-top: -.2rem;
 }
 
 .cont-formulario {
@@ -51,7 +51,8 @@ body{
 .content-formulario{
     background: #fff;
     margin-top: 2.6rem;
-    padding: .7rem 1rem;
+    padding: .7rem 2rem;
+    padding-bottom: 1.6rem;
     width: 350px;
     -webkit-box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
     box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
@@ -59,12 +60,13 @@ body{
 
 .title-form{
     text-align: center;
-    color: #9e9e9e;
-    font-size: 1.4em;
+    font-size: 1.3em;
+    margin-top: .5rem;
 }
 .content-button{
     width: 100%;
     text-align: center;
+    padding-top: .7rem;
 }
 /*input text style*/
 .form-control{
@@ -72,15 +74,25 @@ body{
     width: 100%;
 }
 textarea{
-    border: 1px solid #9e9e9e!important;
+    border: 0px solid #9e9e9e!important;
+    background-color: #eeedf2!important;
+    color: #858585!important;
     border-radius: 0px!important;
     font: 500 14px Arial;
+    font-size: 15px!important;;
     height: 160px;
     resize: none;
     padding: 10px!important;
 }
+textarea:placeholder{
+    color: #bababc!important;
+}
 .textarea1{
     height: 100px;
+    border-radius: 3px!important;
+}
+.textarea2{
+    margin-top: 0rem;
 }
 input[type="email"]:required:valid, input[type="tel"]:required:valid, input[type=text]:required:valid{
     background-color: #fff;
@@ -93,46 +105,46 @@ input[type="email"]:required:valid, input[type="tel"]:required:valid, input[type
 } */
 input[type=text], input[type=password],
 input[type=email],input[type=tel]{
-    background-color:  #eeeeee;
+    background-color: #eeedf2;
     border: none;
     border-radius: 0;
     letter-spacing: normal;
     font: 500 14px Arial;
-    font-size: 16px;
-    margin-bottom: 15px;
+    font-size: 15px;
+    margin-bottom: -9px;
     box-shadow: none;
     -webkit-box-sizing: content-box;
     -moz-box-sizing: content-box;
     box-sizing: content-box;
     transition: all .3s;
     line-height: 1;
-    padding: 9px;
+    padding: 12px;
     padding-left: 2.2rem;
-    width: 88%;
+    width: 84%;
+    border-radius: 3px;
+    color: #858585;
 }
-
 .form-hd{
     position: relative;
     margin-bottom: 1.5rem;
 }
-
 .form-hd label {
     -webkit-transition: 0.2s ease-out;
     transition: 0.2s ease-out;
-    color: #757575;
+    color: #bababc;
     position: absolute;
-    top: 0.4rem;
+    top: 0.7rem;
     left: 0;
-    font-size: 1rem;
+    font-size: 14px;
     cursor: text;
     margin-left: 2.2rem;
 }
 .ico-form{
+    color: #bababc;
     position: absolute;
-    margin-top: .5rem;
+    margin-top: .8rem;
     margin-left: .9rem;
 }
-
 
 input[type=text]:focus:not([readonly]),input[type=password]:focus:not([readonly]), input[type=email]:focus:not([readonly]),
 input[type=url]:focus:not([readonly]), input[type=time]:focus:not([readonly]), input[type=date]:focus:not([readonly]),
@@ -141,7 +153,6 @@ input[type=tel]:focus:not([readonly]), input[type=search]:focus:not([readonly]),
     border-bottom: 1px solid #4285F4;
     box-shadow: 0 1px 0 0 #4285F4;
 }
-
 
 .form-hd label.active {
     -webkit-transform: translateY(-100%)!important;
@@ -171,15 +182,19 @@ input[type="checkbox"] {
     cursor: pointer;
     display: inline-block;
     height: 25px;
-    line-height: 20px;
     font-size: .8em;
+    margin-left: 1rem;
+    line-height: 17px;
+    text-align: left;
     -webkit-user-select: none;
     -moz-user-select: none;
     -khtml-user-select: none;
     -ms-user-select: none;
 }
 .label-check2{
-    font-size: 1em!important;
+    font-size: .9em!important;
+    margin-top: -1rem;
+    margin-bottom: 1.3rem;
 }
 [type=checkbox]+label:before {
     content: '';
@@ -230,11 +245,14 @@ input[type="checkbox"] {
     border-color:#ff9800 !important;
     color: #fff !important;
     padding: .3rem;
+    margin-top: 1.3rem;
+    width: 100%;
+    margin-left: 0;
 }
 
 /*Why work with us*/
 .title-work{
-    color: #616161;
+    color: #696969;
     font-size: 3.5em;
     font-weight: 800;
     margin: 3rem 0;
@@ -260,10 +278,10 @@ input[type="checkbox"] {
 }
 
 .content-planes{
-    background-color: #e0e0e0;
+    background-color: #f2f2f2;
 }
 .title-planes{
-    color: #616161;
+    color: #696969;
     text-align: center;
     margin: 3rem 0;
 }
@@ -380,18 +398,19 @@ input[type="checkbox"] {
 
 /*Frase*/
 .cont-frase{
-    height: 620px;
+    height: 506px;
 }
 .content-comilla{
     text-align: center;
 }
 .comilla{
-    color: #616161;
+    color: #696969;
     font-size: 5em;
-    font-weight: 800;
+    font-weight: 700;
     line-height: .5;
 }
 .txt-frase{
+    color: #696969;
     font-size: 1.2em;
     font-weight: 500;
     width: 800px;
@@ -399,16 +418,18 @@ input[type="checkbox"] {
 }
 .img-frase{
     margin: 2rem;
-    width: 18%;
+    width: 8%;
     border-radius: 50%;
 }
-
 .txt-des-frase{
     color: #323232;
     font-weight: 700;
+    line-height: 1;
     text-align: center;
+    margin-top: -1.2rem;
 }
 .txt-des-frase-span{
+    font-size: 13px;
     font-weight: 500;
 }
 
@@ -417,13 +438,17 @@ input[type="checkbox"] {
     width: 80%;
 }
 /*contenedor de formulario 2*/
+.title-lite{
+    font-weight: 500;
+}
 .content-form2{
-    width: 65%;
+    width: 52%;
     margin: 0 auto;
     padding-top: 2rem;
 }
 .cont-form{
-    height: 540px;
+    padding-top: .5rem;
+    height: 510px;
 }
 .title-form2{
     font-size: 140%;
@@ -433,7 +458,7 @@ input[type="checkbox"] {
     margin-bottom: -1rem;
 }
 .footer{
-    background: #616161;
+    background: #696969;
     color: #fff;
     padding: 1rem .5rem;
     height: 85px;
@@ -441,14 +466,20 @@ input[type="checkbox"] {
 .logo-footer{
     margin: 0 auto!important;
     width: 60px;
+    margin-top: -.2rem!important;;
 }
 .txt-footer{
     margin-top: 1rem;
     font-size: 1.2em; 
+    font-weight: 600;
 }
 .txt-copy{
     font-size: .7em;
     margin-top: 1.5rem;
+}
+.email2{
+    font-weight: 300;
+    font-size: .8em;
 }
 .enlace-pdf{
     text-decoration: none;
@@ -461,7 +492,65 @@ input[type="checkbox"] {
     font-weight: 500;
 }
 
+/*Pagina de gracias*/
+.agradecimiento {
+    color: #00C851;
+    padding: 8.77rem .5rem;
+    text-align: center;
+}
+.title-1 {
+    font-weight: 900;
+    text-align: center;
+    font-size: 300%;
+    text-transform: uppercase;
+}
+.ico-check {
+    font-size: 70px;
+}
+.h1-responsive {
+    font-size: 250%;
+}
 
+.footer2{
+    background: #696969;
+    color: #fff;
+    padding: 1.2rem .5rem;
+    height: 90px; 
+
+}
+.social{
+    margin-top: .5rem;
+}
+.btn-social{
+    margin: 0.8rem;
+}
+.icon {
+    border: 2px solid #fff;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 20px;
+    height: 44px;
+    padding-top: 10px;
+    text-align: center;
+    width: 44px;
+}
+
+.icoface:hover,.icoface:focus{
+    background: #3B5998;
+}
+.icoinsta:hover,.icoinsta:focus{
+    background: linear-gradient( 49deg, #ff5252 , #EE2A7B);
+}
+.icotwitter:hover, .icontwitter:focus{
+    background: #00aced;
+}
+.icobehance:hover,.icobehance:focus{
+    background: #000;
+    color: #fff;
+}
+.icolinkedin:hover,.icolinkedin:focus{
+    background: #0077B5;
+}
 @media screen and (min-width: 768px){
     .row-hd {
         width: 113.8%;
@@ -473,20 +562,6 @@ input[type="checkbox"] {
         width: 121.35%;
         margin-left: -7.45rem;
     }
-/*     .video_stream {
-        width: 100%;
-        height: 500px;
-        margin-bottom: -.5rem;
-    }
-
-    .content-planes {
-        width: 121.33%;
-        margin-left: -7.44rem;
-    }
-    .footer{
-        width: 121.33%;
-        margin-left: -7.44rem;
-    } */
 }
 @media screen and (min-width: 1600px){
     .h3-responsive {
@@ -507,8 +582,9 @@ input[type="checkbox"] {
         padding: .9rem 0;
     }
     .logo {
-        width: 130px;
+        width: 190px;
         margin-left: 6rem;
+        margin-top: .2rem;
     }
     .contacto {
         margin-top: 1.3rem;
@@ -639,7 +715,7 @@ input[type="checkbox"] {
 
     /*Frase*/
     .cont-frase{
-        height: 820px;
+        height: 600px;
     }
     .comilla {
         font-size: 7em;
@@ -662,7 +738,6 @@ input[type="checkbox"] {
         margin-bottom: 0rem;
     }
 }
-
 
 
 @media screen and (max-width: 1024px){
@@ -734,9 +809,20 @@ input[type="checkbox"] {
     .logo-footer {
         margin-left: -2rem!important;
     }
+
+
+    .footer2 {
+        width: 110.1%;
+        margin-left: -2.98rem;
+        height: 108px;
+    }
+    .agradecimiento {
+        padding: 8.05rem .5rem;
+    }
+    .btn-social {
+        margin: 0.7rem;
+    }
 }
-
-
 
 @media screen and (max-width: 768px){
     .row-hd .row {
@@ -756,7 +842,7 @@ input[type="checkbox"] {
     }
     .content-formulario {
         margin-top: 1.6rem;
-        height: 560px;
+        height: 642px;
         width: 90%;
         margin-left: 2rem;
     }
@@ -764,7 +850,7 @@ input[type="checkbox"] {
         padding: 14px;
         padding-left: 2.2rem;
         margin-bottom: -.5rem!important;
-        width: 83%;
+        width: 81%;
     }
 
     .form-2 input[type=text],.form-2 input[type=tel], .form-2 input[type=password], .form-2 input[type=email] {
@@ -781,7 +867,7 @@ input[type="checkbox"] {
     }
 
     .cont-info{
-        height: 676px;
+        height: 745px;
     }
     .content-info {
         padding: 0rem 0;
@@ -791,6 +877,7 @@ input[type="checkbox"] {
         font-size: 3.3em;
         margin: 2rem 0;
         margin-left: 3rem;
+        width: 298px;
     }
     .content-icons{
         margin: 0 auto;
@@ -830,7 +917,10 @@ input[type="checkbox"] {
         width: 600px;
     }
     .cont-form {
-        height: 580px;
+        height: 515px;
+    }
+    .content-form2 {
+        width: 73%;
     }
 
     .footer {
@@ -839,6 +929,22 @@ input[type="checkbox"] {
     .logo-footer {
         margin-top: .5rem!important;
         margin-left: 1rem!important;
+    }
+    /*pagina de gracias*/
+    .agradecimiento {
+        color: #00C851;
+        padding: 14.6rem .5rem;
+        text-align: center;
+    }
+    .footer2 {
+        padding: 1.1rem .5rem;
+        height: 107px;
+    }
+    .social {
+        margin-top: 0.9rem;
+    }
+    .btn-social {
+        margin: 0.23rem;
     }
 }
 
@@ -854,10 +960,10 @@ input[type="checkbox"] {
         margin-left: 1.6rem;
     }
     .cont-formulario {
-        height: 970px;
+        height: 1060px;
     }
     .content-formulario {
-        height: 570px;
+        height: 640px;
         width: 90%;
         padding: 2rem 2.5rem;
         margin: 0 auto;
@@ -885,6 +991,10 @@ input[type="checkbox"] {
 
     .title-work {
         margin-left: 2rem;
+        width: 520px;
+    }
+    .cont-frase {
+        height: 450px;
     }
 
     .cont-form {
@@ -942,12 +1052,12 @@ input[type="checkbox"] {
         background-repeat: no-repeat;
         margin-left: 0rem;
         margin-right: 0rem;
-        height: 775px;
+        height: 800px;
     } 
     .content-formulario {
-        padding: 1.5rem 1rem;
+        padding: 1.5rem 1.2rem;
         width: 310px;
-        height: 598px;
+        height: 624px;
         margin-left: 0rem;
         margin: 0 auto;
         margin-top: 15rem;
@@ -959,7 +1069,6 @@ input[type="checkbox"] {
         margin-left: .9rem;
         margin-top: 1rem;
     }
-
     .space-form{
         padding-right: 15px;
         padding-left: 15px;
@@ -967,12 +1076,13 @@ input[type="checkbox"] {
     }
     input[type=text], input[type=tel], input[type=password], input[type=email] {
         padding-left: 1.7rem;
+        width: 81%;
     }
     .form-2 input[type=text],.form-2 input[type=tel], .form-2 input[type=password], .form-2 input[type=email] {
         font: 500 16px Arial;
         font-size: 18px;
         padding: 16px;
-        width: 83%;
+        width: 81%;
         padding-left: 2.4rem;
     }
     .form-hd label {
@@ -987,6 +1097,7 @@ input[type="checkbox"] {
         margin: 1rem auto;
         margin-top: 4rem;
         text-align: center;
+        width: 300px;
     }
     .content-icons {
         height: 70px;
@@ -995,6 +1106,7 @@ input[type="checkbox"] {
     }
     .cont-info{
         padding: 1rem .5rem;
+        height: 1320px;
     }
     .content-info {
         padding: .5rem 0;
@@ -1032,7 +1144,7 @@ input[type="checkbox"] {
         width: 300px;
     }
     .cont-frase {
-        height: 620px;
+        height: 520px;
     }
     .img-frase {
         width: 50%;
@@ -1052,11 +1164,11 @@ input[type="checkbox"] {
         padding-top: 2rem;
     }
     .cont-form {
-        height: 780px;
+        height: 700px;
         padding: 2rem 1rem;
     }
-    .btn-naranja2{
-        width: 95%;
+    .btn-naranja2 {
+        width: 100%;
     }
 
     .footer {
@@ -1078,4 +1190,22 @@ input[type="checkbox"] {
         text-align: center;
     }
 
+    .agradecimiento {
+        padding: 3.4rem .5rem;
+    }
+
+    .h1-responsive {
+        font-size: 170%;
+    }
+    .social {
+        margin-top: 0.4rem;
+        margin-bottom: .4rem;
+    }
+    .btn-social {
+        margin: 0.88rem;
+    }
+    .footer2 {
+        padding: 1.1rem .5rem;
+        height: 149px;
+    }
 }
