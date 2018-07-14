@@ -467,22 +467,27 @@ input[type="checkbox"] {
         width: 113.8%;
         margin-left: -4.88rem;
     }
-    .video_stream {
+}
+@media screen and (min-width: 1330px){
+    .row-hd {
+        width: 121.35%;
+        margin-left: -7.45rem;
+    }
+/*     .video_stream {
         width: 100%;
         height: 500px;
         margin-bottom: -.5rem;
     }
 
     .content-planes {
-        width: 121%;
+        width: 121.33%;
         margin-left: -7.44rem;
     }
     .footer{
-        width: 121%;
+        width: 121.33%;
         margin-left: -7.44rem;
-    }
+    } */
 }
-
 @media screen and (min-width: 1600px){
     .h3-responsive {
         font-size: 260%;
