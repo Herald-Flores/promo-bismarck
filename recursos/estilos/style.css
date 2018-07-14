@@ -82,7 +82,7 @@ textarea{
 .textarea1{
     height: 100px;
 }
-.form-hd input[type="email"]:required:valid,.form-hd input[type="tel"]:required:valid, .form-hd input[type=text]:required:valid{
+input[type="email"]:required:valid, input[type="tel"]:required:valid, input[type=text]:required:valid{
     background-color: #fff;
     border-bottom: 1px solid #00C851;
     box-shadow: 0 1px 0 0 #00C851;
@@ -137,12 +137,10 @@ input[type=email],input[type=tel]{
 input[type=text]:focus:not([readonly]),input[type=password]:focus:not([readonly]), input[type=email]:focus:not([readonly]),
 input[type=url]:focus:not([readonly]), input[type=time]:focus:not([readonly]), input[type=date]:focus:not([readonly]),
 input[type=datetime-local]:focus:not([readonly]), input[type=tel]:focus:not([readonly]), input[type=number]:focus:not([readonly]),
-input[type=search-md]:focus:not([readonly]), input[type=search]:focus:not([readonly]), textarea.md-textarea:focus:not([readonly]) {
+input[type=tel]:focus:not([readonly]), input[type=search]:focus:not([readonly]), textarea.md-textarea:focus:not([readonly]) {
     border-bottom: 1px solid #4285F4;
     box-shadow: 0 1px 0 0 #4285F4;
 }
-
-
 
 
 .form-hd label.active {
@@ -491,7 +489,7 @@ input[type="checkbox"] {
     .title-form {
         font-size: 1.9em;
     }
-    input[type=text], input[type=password], input[type=email] {
+    input[type=text],input[type=tel], input[type=password], input[type=email] {
         font: 500 16px Arial;
         font-size: 18px;
         padding: 12px;
@@ -612,29 +610,77 @@ input[type="checkbox"] {
 }
 
 @media screen and (max-width: 1024px){
-    .h3-responsive {
-        font-size: 160%;
-    }
-
     .row-hd .row {
         margin-right: 0rem;
         margin-left: 4rem;
+    }
+    .row-hd {
+        width: 110.1%;
+        margin-left: -5rem;
+    }
+    .logo {
+        width: 170px;
+        margin-top: .9rem;
+    }
+    .content-menu {
+        height: 84px;
+        padding: .2rem 0;
+    }
+    .h3-responsive {
+        font-size: 160%;
+    }
+    .content-formulario {
+       width: 100%; 
+        margin-top: 1.2rem;
+    }
+    .cont-formulario {
+        margin-left: -2.93rem!important;
+        height: 500px;
+    }
+    .title-form {
+        text-align: center;
+        color: #9e9e9e;
+        font-size: 1.25em;
+    }
+    .cont-info {
+        margin-left: -5.8rem!important;
+    }
+    .content-icons {
+        height: 90px;
+        margin-top: 2rem;
+        width: 90px;
+        margin-left: -3rem;
+    }
+    .video_stream {
+        margin-left: 2.05rem;
+    }
+    input[type=text], input[type=password], input[type=email], input[type=tel] {
+        width: 84%;
     }
 
     .txt-info{
         width: 280px;
         margin: 0 auto;
     }
+    .content-planes {
+        width: 110%;
+        margin-left: -3rem!important;
+        padding-left: 0!important;
+    }
     .content-plan {
-        width: 1000px;
-        margin-left: 2.4rem;
+        width: 1022px;
+        margin-left: -3.7rem;
     }
     .footer {
         height: 88px;
+        margin-left: -2.95rem!important;
+    }
+    .logo-footer {
+        margin-left: -2rem!important;
     }
 }
 @media screen and (max-width: 768px){
-    input[type=text], input[type=password], input[type=email] {
+    input[type=text],input[type=tel], input[type=password], input[type=email] {
         width: 84%;
     }
     .row-hd .row {
@@ -643,16 +689,17 @@ input[type="checkbox"] {
     }
     .row-hd {
         width: 111.3%;
-        margin-left: -2.45rem;
+        margin-left: -2.43rem!important;
     }
+
     .cont-formulario {
-        height: 720px;
+        height: 570px;
     }
     .content-formulario {
-        margin-top: 6rem;
-        height: 660px;
-        width: 100%;
-        padding: 2rem 1rem;
+        margin-top: 1.6rem;
+        height: 570px;
+        width: 90%;
+        margin-left: 2rem;
     }
     .content-icons{
         margin: 0 auto;
@@ -670,6 +717,9 @@ input[type="checkbox"] {
     }
     .content-icons {
         margin-top: 2rem;
+    }
+    .video_stream {
+       margin-left: 0rem;
     }
     .content-plan {
         display: flex;
@@ -704,21 +754,28 @@ input[type="checkbox"] {
     }
     .logo-footer {
         margin-top: .5rem!important;
+        margin-left: 1rem!important;
     }
 }
 
 @media screen and (max-width: 650px){
     .row-hd {
         width: 125.6%;
-        margin-left: -4.1rem;
+        margin-left: -4.1rem!important;
     }
-
+    .cont-formulario {
+        height: 625px;
+    }
     .content-formulario {
-        height: 640px;
+        height: 535px;
         width: 90%;
         padding: 2rem 1rem;
         margin: 0 auto;
         margin-top: 6rem;
+    }
+
+    .title-work {
+        margin-left: 2rem;
     }
 
     .cont-form {
@@ -726,10 +783,17 @@ input[type="checkbox"] {
     }
 
     .footer {
-        height: 134px;
+        height: 142px;
+    }
+    .txt-footer {
+        margin-top: 1rem;
+        font-size: 1.4em;
+        margin-left: -1.5rem;
     }
     .txt-copy{
         text-align: center;
+        margin-top: .5rem;
+        font-size: 14px;
     }
 }
 @media screen and (max-width: 580px){
@@ -766,15 +830,14 @@ input[type="checkbox"] {
         padding-left: 3rem;
     }  
     .cont-formulario {
-        background: #EC2234;
         margin-left: 0rem;
         margin-right: 0rem;
-        height: 760px;
+        height: 640px;
     } 
     .content-formulario {
         padding: 1.5rem 1rem;
         width: 310px;
-        height: 665px;
+        height: 560px;
         margin-left: 0rem;
         margin: 0 auto;
         margin-top: 8rem;
@@ -812,7 +875,7 @@ input[type="checkbox"] {
     }
     
     .content-planes{
-        padding: 2rem 1rem;
+        padding: 2rem 0rem;
     }
     .title-planes {
         text-align: center;
@@ -870,6 +933,7 @@ input[type="checkbox"] {
     .txt-footer {
         margin-top: .2rem;
         font-size: 1em;
+        margin-left: 0;
     }
     .txt-copy {
         font-size: .6em;

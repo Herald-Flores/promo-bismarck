@@ -8,11 +8,11 @@
     // $email = @trim(stripslashes($objDatos->email));
     // $phone = @trim(stripslashes($objDatos->phone));
     // $message = @trim(stripslashes($objDatos->msj));
-    $name = $_POST['name'];
-    $email = $_POST['email'];
-    $empresa = $_POST['company'];
-    $phone =$_POST['phone'];
-    $proyect = $_POST['proyect'];
+    $name = $_POST['nombre'];
+    $email = $_POST['correo'];
+    $empresa = $_POST['empresa'];
+    $phone =$_POST['telefono'];
+    $proyect = $_POST['proyecto'];
     echo $name;
 
 require 'class.phpmailer.php';
