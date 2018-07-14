@@ -451,6 +451,25 @@ input[type="checkbox"] {
     font-size: .7em;
     margin-top: 1.5rem;
 }
+.enlace-pdf{
+    text-decoration: none;
+}
+
+.enlace-pdf:hover,.enlace-pdf:focus {
+    text-decoration: none;
+    cursor: pointer;
+    color:  #323232;
+    font-weight: 500;
+}
+
+
+@media screen and (min-width: 768px){
+    .row-hd {
+        width: 113.8%;
+        margin-left: -4.88rem;
+    }
+}
+
 @media screen and (min-width: 1600px){
     .h3-responsive {
         font-size: 260%;
@@ -480,21 +499,38 @@ input[type="checkbox"] {
     .cont-formulario {
         height: 700px;
     }
+
     .content-formulario {
-        width: 540px;
-        margin-top: 8rem;
+        width: 420px;
+        margin-top: 7rem;
         margin-left: 6rem;
-        padding: 2.8rem 3rem;
+        padding: 1.8rem 2.6rem;
     }
     .title-form {
-        font-size: 1.9em;
+        font-size: 1.6em;
     }
     input[type=text],input[type=tel], input[type=password], input[type=email] {
         font: 500 16px Arial;
         font-size: 18px;
-        padding: 12px;
+        padding: 14px;
         padding-left: 2.4rem;
+        width: 85%;
+        margin-bottom: -.5rem!important;
     }
+    .form-2 input[type=text],.form-2 input[type=tel], .form-2 input[type=password], .form-2 input[type=email] {
+        width: 88%;
+        margin-bottom: 0.5rem!important;
+    }
+    [type=checkbox]+label, [type=radio]+label {
+        line-height: 23px;
+        font-size: .9em;
+    }
+    .label-check2{
+        line-height: 28px!important;
+        font-size: 1.1em!important;
+        margin-bottom: 3rem!important;
+    }
+
     .form-hd label {
         top: 0.7rem;
         margin-left: 2.4rem;
@@ -609,6 +645,8 @@ input[type="checkbox"] {
     }
 }
 
+
+
 @media screen and (max-width: 1024px){
     .row-hd .row {
         margin-right: 0rem;
@@ -679,10 +717,10 @@ input[type="checkbox"] {
         margin-left: -2rem!important;
     }
 }
+
+
+
 @media screen and (max-width: 768px){
-    input[type=text],input[type=tel], input[type=password], input[type=email] {
-        width: 84%;
-    }
     .row-hd .row {
         margin-right: 0rem;
         margin-left: 0rem;
@@ -693,23 +731,51 @@ input[type="checkbox"] {
     }
 
     .cont-formulario {
-        height: 570px;
+        background: url("../../recursos/img/IPAD.jpg");
+        background-size: 100%;
+        background-repeat: no-repeat;
+        height: 560px;
     }
     .content-formulario {
         margin-top: 1.6rem;
-        height: 570px;
+        height: 560px;
         width: 90%;
         margin-left: 2rem;
     }
-    .content-icons{
-        margin: 0 auto;
+    input[type=text],input[type=tel], input[type=password], input[type=email] {
+        padding: 14px;
+        padding-left: 2.2rem;
+        margin-bottom: -.5rem!important;
+        width: 83%;
+    }
+
+    .form-2 input[type=text],.form-2 input[type=tel], .form-2 input[type=password], .form-2 input[type=email] {
+        width: 78%;
+    }
+    .form-hd label {
+        top: 0.7rem;
+    }
+    .ico-form {
+        margin-top: .9rem;
     }
     .title-form {
         font-size: 1.4em;
     }
 
+    .cont-info{
+        height: 676px;
+    }
     .content-info {
         padding: 0rem 0;
+    }
+    
+    .title-work {
+        font-size: 3.3em;
+        margin: 2rem 0;
+        margin-left: 3rem;
+    }
+    .content-icons{
+        margin: 0 auto;
     }
     .txt-info {
         width: 100%;
@@ -763,15 +829,40 @@ input[type="checkbox"] {
         width: 125.6%;
         margin-left: -4.1rem!important;
     }
+    .form-hd label { 
+        margin-left: 2.6rem;
+    }
+    .ico-form {
+        margin-left: 1.6rem;
+    }
     .cont-formulario {
-        height: 625px;
+        height: 970px;
     }
     .content-formulario {
-        height: 535px;
+        height: 570px;
         width: 90%;
-        padding: 2rem 1rem;
+        padding: 2rem 2.5rem;
         margin: 0 auto;
-        margin-top: 6rem;
+        margin-top: 27rem;
+    }
+
+    input[type=text], input[type=tel], input[type=password], input[type=email] {
+        padding: 18px;
+        padding-left: 3rem;
+        width: 86%;
+        margin-bottom: -.5rem;
+    }
+    .form-2 input[type=text],.form-2 input[type=tel], .form-2 input[type=password], .form-2 input[type=email] {
+        width: 86%;
+        margin-bottom: 0.5rem!important;
+        padding-left: 2.4rem;
+    }
+    .form-hd label {
+        top: 0.9rem;
+    }
+    .ico-form {
+        margin-left: 1.3rem;
+        margin-top: 1.2rem;
     }
 
     .title-work {
@@ -779,7 +870,7 @@ input[type="checkbox"] {
     }
 
     .cont-form {
-        height: 720px;
+        height: 750px;
     }
 
     .footer {
@@ -810,15 +901,12 @@ input[type="checkbox"] {
         width: 109%;
     }
     
-    input[type=text], input[type=password], input[type=email] {
-        padding-left: 1.7rem;
-    }
     .h2-responsive {
         font-size: 135%!important;
     }
     .logo {
-        width: 80px;
-        margin-top: 1rem;
+        width: 100px;
+        margin-top: 1.6rem;
     }
     .content-menu {
         height: 80px;
@@ -829,21 +917,51 @@ input[type="checkbox"] {
         font-weight: 600;
         padding-left: 3rem;
     }  
+    
     .cont-formulario {
+        background: url("../../recursos/img/IPAD.jpg");
+        background-size: 100%;
+        background-repeat: no-repeat;
         margin-left: 0rem;
         margin-right: 0rem;
-        height: 640px;
+        height: 775px;
     } 
     .content-formulario {
         padding: 1.5rem 1rem;
         width: 310px;
-        height: 560px;
+        height: 598px;
         margin-left: 0rem;
         margin: 0 auto;
-        margin-top: 8rem;
+        margin-top: 15rem;
     }
     .title-form {
         font-size: 1.1em;
+    }
+    .ico-form {
+        margin-left: .9rem;
+        margin-top: 1rem;
+    }
+
+    .space-form{
+        padding-right: 15px;
+        padding-left: 15px;
+        margin: -.5rem 0rem;
+    }
+    input[type=text], input[type=tel], input[type=password], input[type=email] {
+        padding-left: 1.7rem;
+    }
+    .form-2 input[type=text],.form-2 input[type=tel], .form-2 input[type=password], .form-2 input[type=email] {
+        font: 500 16px Arial;
+        font-size: 18px;
+        padding: 16px;
+        width: 83%;
+        padding-left: 2.4rem;
+    }
+    .form-hd label {
+        top: 0.9rem;
+    }
+    .form-2 .ico-form {
+        margin-top: 1.1rem;
     }
 
     .title-work {
@@ -929,6 +1047,7 @@ input[type="checkbox"] {
     }
     .logo-footer {
         width: 55px;
+        margin-top: 0rem!important;
     }
     .txt-footer {
         margin-top: .2rem;
