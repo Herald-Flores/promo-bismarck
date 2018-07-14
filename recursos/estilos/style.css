@@ -437,7 +437,6 @@ input[type="checkbox"] {
     color: #fff;
     padding: 1rem .5rem;
     height: 85px;
-
 }
 .logo-footer{
     margin: 0 auto!important;
@@ -467,6 +466,20 @@ input[type="checkbox"] {
     .row-hd {
         width: 113.8%;
         margin-left: -4.88rem;
+    }
+    .video_stream {
+        width: 100%;
+        height: 500px;
+        margin-bottom: -.5rem;
+    }
+
+    .content-planes {
+        width: 121%;
+        margin-left: -7.44rem;
+    }
+    .footer{
+        width: 121%;
+        margin-left: -7.44rem;
     }
 }
 
