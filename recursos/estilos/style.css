@@ -1206,7 +1206,10 @@ input[type="checkbox"] {
     }
 
     .h1-responsive {
-        font-size: 150%;
+        font-size: 145%;
+    }
+    .ico-check {
+        font-size: 50px;
     }
     .icon {
         font-size: 16px;
@@ -1224,6 +1227,6 @@ input[type="checkbox"] {
     }
     .footer2 {
         padding: 1.1rem .5rem;
-        height: 149px;
+        height: 135px;
     }
 }
