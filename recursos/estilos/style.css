@@ -1194,6 +1194,7 @@ input[type="checkbox"] {
         margin-top: .2rem;
         font-size: 1em;
         margin-left: 0;
+        text-align: center;
     }
     .txt-copy {
         font-size: .55em;
@@ -1207,15 +1208,15 @@ input[type="checkbox"] {
     }
 
     .h1-responsive {
-        font-size: 145%;
+        font-size: 140%;
     }
     .ico-check {
-        font-size: 50px;
+        font-size: 45px;
     }
     .icon {
         font-size: 16px;
         height: 35px;
-        padding-top: .46rem;
+        padding-top: .48rem;
         width: 35px;
         padding-left: 0.12rem;
     }
