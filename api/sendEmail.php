@@ -50,10 +50,10 @@ $mail->Subject    = 'Campaña BigBang USA';
 $mail->MsgHTML($body);
 
 
-$mail->AddAddress('heraldflores95@gmail.com', 'Herald');
+//$mail->AddAddress('heraldflores95@gmail.com', 'Herald');
 // $mail->AddAddress('marvingutierrezjr@gmail.com', 'Marvin');
 // $mail->AddAddress('jenniercruz90@gmail.com', 'Jennier');
-//$mail->AddAddress('contacto@bigbangnica.studio', 'BigBang Studio');
+$mail->AddAddress('contacto@bigbangnica.studio', 'BigBang Studio');
 // $mail->AddAddress('duviedh22@gmail.com', 'Jerson');
 // $mail->AddAddress('bahrdiseno@gmail.com', 'Byron');
 
