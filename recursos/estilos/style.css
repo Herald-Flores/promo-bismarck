@@ -274,6 +274,7 @@ input[type="checkbox"] {
 .img-icon{
     width: 85px;
     margin-right: 2rem;
+    margin-top: 1rem;
 }
 .video_stream {
     width: 100%;
@@ -294,7 +295,7 @@ input[type="checkbox"] {
 }
 
 .lista li {
-    font-size: 1.3em;
+    font-size: 1.1em;
     line-height: 35px;
     list-style: none;
     background: url(../img/flecha.png) left no-repeat;
@@ -309,6 +310,12 @@ input[type="checkbox"] {
     color: #696969;
     text-align: center;
     margin: 3rem 0;
+}
+
+.txt-planes-desc{
+    text-align: center;
+    margin-bottom: 4rem;
+    margin-top: -1rem;
 }
 .content-plan{
     display: flex;
@@ -458,7 +465,20 @@ input[type="checkbox"] {
     background-color: rgba(36, 35, 35, 0.842);
 }
 
-
+.title-respaldos{
+    text-align: center;
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+}
+.txt-relpaldos{
+    text-align: center;
+    margin-top: -1.8rem;
+    margin-bottom: 2.5rem;
+}
+.cont-img-logo{
+    text-align: center;
+    margin-bottom: 4rem;
+}
 /*Frase*/
 .cont-frase{
     height: 506px;
@@ -478,6 +498,7 @@ input[type="checkbox"] {
     font-weight: 500;
     width: 700px;
     margin: 0 auto;
+    text-align: center;
 }
 .img-frase{
     margin: 2rem;
@@ -945,16 +966,29 @@ input[type="checkbox"] {
     .content-icons{
         margin: 0 auto;
     }
+
     .txt-info {
         width: 100%;
         margin: 1rem auto;
     }
-    .content-icons {
-        margin-top: 2rem;
+    .img-icon {
+        margin-left: 3rem;
     }
+
     .video_stream {
        margin-left: 0rem;
     }
+
+    .content-feature {
+        height: 285px;
+        padding: 2rem 0;
+    }
+    .lista li {
+        font-size: .9em;
+        padding-left: 18px;
+        background-size: 21px;
+    }
+
     .content-plan {
         display: flex;
         justify-content: space-around;
@@ -977,7 +1011,7 @@ input[type="checkbox"] {
         margin-top: 0rem;
     }
     .txt-frase {
-        width: 600px;
+        width: 500px;
     }
     .cont-form {
         height: 515px;
@@ -1057,13 +1091,20 @@ input[type="checkbox"] {
         width: 520px;
     }
     .cont-frase {
-        height: 450px;
+        height: 815px;
     }
 
     .cont-form {
         height: 750px;
     }
-
+    .content-feature {
+        height: 480px;
+        padding: 2rem 0;
+    }
+    .img-slide {
+        width: 80%!important;
+        margin: 0 auto;
+    }
     .footer {
         height: 142px;
     }
@@ -1167,11 +1208,13 @@ input[type="checkbox"] {
     }
 
     .img-icon{
-        margin-top: 4rem;
+        width: 72px;
+        margin-top: 7rem;
+        margin-left: -1.6rem;
     }
     .cont-info{
         padding: 1rem .5rem;
-        height: 1320px;
+        height: 1300px;
     }
     .content-info {
         padding: .5rem 0;
@@ -1187,20 +1230,19 @@ input[type="checkbox"] {
         height: 300px; 
     }
     
-
     .content-feature {
         background: url(../../recursos/img/Ilustracion.jpg);
         background-size: 100%;
         background-repeat: no-repeat;
         height: 650px;
         padding: 12rem 0;
+        background-color: #ecf4ff;
     }
 
     .lista li {
         font-size: 1.1em;
         background-size: 22px;
     }
-
 
     .content-planes{
         padding: 2rem 0rem;
@@ -1209,6 +1251,10 @@ input[type="checkbox"] {
         text-align: center;
         margin: 1rem 0; 
     }
+    .txt-planes-desc {
+        margin-bottom: 3rem;
+        margin-top: 0rem;
+    }    
     .content-plan {
         padding-bottom: 0rem;
         padding-top: .5rem;
@@ -1223,8 +1269,13 @@ input[type="checkbox"] {
         margin-top: 0rem;
         width: 300px;
     }
+
+    .img-slide {
+        width: 100%!important;
+    }
+
     .cont-frase {
-        height: 520px;
+        height: 910px;
     }
     .img-frase {
         width: 50%;
