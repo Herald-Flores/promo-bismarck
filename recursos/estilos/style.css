@@ -326,7 +326,7 @@ input[type="checkbox"] {
     flex-wrap: wrap;
     margin: 0 auto;
     padding-bottom: 2rem;
-    width: 1100px;
+    width: 1200px;
     height: 620px;
 }
 
@@ -335,10 +335,10 @@ input[type="checkbox"] {
     border-radius: 10px;
     -webkit-box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
     box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
-    padding: 2rem 3rem;
-    width: 300px;
+    padding: 2rem 1rem;
+    width: 360px;
     text-align: center;
-    height: 560px;
+    height: 570px;
     margin-top: -.6rem;
 }
 .plan2{
@@ -346,10 +346,10 @@ input[type="checkbox"] {
     border-radius: 10px;
     -webkit-box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
     box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
-    padding: 2rem 3rem;
-    width: 290px;
+    padding: 2rem .9rem;
+    width: 350px;
     text-align: center;
-    height: 520px;
+    height: 530px;
     margin-top: .6rem;
 }
 .plan:hover, .plan:focus{
@@ -365,8 +365,9 @@ input[type="checkbox"] {
     transition: 1s;
 }
 .txt-plan{
-    font-size: 1.1em;
+    font-size: 1em;
     font-weight: 500;
+    width: 330px;
 }
 .tipe-plan{
     font-size: 1.2em;
@@ -378,8 +379,10 @@ input[type="checkbox"] {
 }
 
 .txt-plan2{
-    font-size: 1em;
+    font-size: .93em;
     font-weight: 500;
+    width: 324px;
+    height: 240px;
 }
 .tipe-plan2{
     font-size: 1.1em;
@@ -897,6 +900,28 @@ input[type="checkbox"] {
     .content-plan {
         width: 1022px;
         margin-left: -3.7rem;
+    }    
+    .plan {
+        padding: 2rem .9rem;
+        width: 300px;
+        text-align: center;
+        height: 570px;
+    }
+    .txt-plan {
+        font-size: .96em;
+        width: 272px;
+    }
+    .plan2 {
+        padding: 2rem .9rem;
+        width: 285px;
+        text-align: center;
+        height: 530px;
+    }
+    .txt-plan2 {
+        font-size: .9em;
+        font-weight: 500;
+        width: 255px;
+        height: 250px;
     }
     .footer {
         height: 88px;
@@ -1011,19 +1036,27 @@ input[type="checkbox"] {
         margin: 0 auto;
         padding-bottom: 2rem;
         width: 768px;
-        height: 1600px;
+        height: 1800px;
     }
     .plan {
         width: 460px;
         padding: 2rem 1rem;
-        height: 490px;
+        height: 570px;
         margin-top: 0rem;
     }
     .plan2 {
         width: 440px;
         padding: 2rem 1rem;
-        height: 460px;
+        height: 530px;
         margin-top: 0rem;
+    }
+    .txt-plan {
+        width: 427px;
+    }
+    .txt-plan2 {
+        font-size: .95em;
+        height: 240px;
+        width: 410px;
     }
     .img-logo{
         width: 70%;
@@ -1290,6 +1323,7 @@ input[type="checkbox"] {
 
     .content-planes{
         padding: 2rem 0rem;
+
     }
     .title-planes {
         text-align: center;
@@ -1304,15 +1338,29 @@ input[type="checkbox"] {
         padding-bottom: 0rem;
         padding-top: .5rem;
         width: 300px;
-        height: 1560px;
+        height: 1800px;
     }
     .plan {
         margin-top: 0rem;
         width: 300px;
+        height: 580px;
     }
     .plan2 {
         margin-top: 0rem;
         width: 300px;
+        height: 540px;
+   }
+    .txt-plan {
+        font-size: .95em;
+        font-weight: 500;
+        width: 270px;
+    }
+
+    .txt-plan2 {
+        font-size: .89em;
+        font-weight: 500;
+        width: 270px;
+        height: 260px;
     }
 
     .img-slide {
