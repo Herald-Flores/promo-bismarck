@@ -11,7 +11,7 @@
     $name = $_POST['name'];
     $email = $_POST['email'];
     $empresa = $_POST['company'];
-    $phone =$_POST['phone'];
+    $service =$_POST['select-service'];
     $proyect = $_POST['proyect'];
     echo $name;
 
@@ -24,7 +24,7 @@ $mail->CharSet = 'UTF-8';
 $body = <<<EOT
 Titular: $name <br>
 Empresa: $empresa <br>
-Teléfono: $phone <br>
+Teléfono: $service <br>
 Correo: $email <br>
 
 -------------------------------------------<br>

@@ -59,10 +59,14 @@
                                 <label for="input-Corporation" data-error="wrong" data-success="right">Company</label>
                             </div>
 
-                            <div class="form-hd">
-                                <i class="fa fa-phone ico-form"></i>
-                                <input type="tel" id="input-phone" class="form-control"name="phone" required>
-                                <label for="input-phone" data-error="wrong" data-success="right">Phone</label>
+                            <div class="form-hd form-hd-select">
+                                <select class="select-option" name="select-service">
+                                    <option class="select-item" value="">Select your service</option>
+                                    <option class="select-item" value="Basic">Basic</option>
+                                    <option class="select-item" value="Pro">Pro</option>
+                                    <option class="select-item" value="Prime">Prime</option>
+                                    <option class="select-item" value="personalizado">Personalizado</option>
+                                </select>
                             </div>
                             
                             <textarea class="form-control textarea1" rows="3" id="mensaje" placeholder="Enter the description of your project" name="proyect" required></textarea>                        
@@ -148,7 +152,7 @@
 
         <!--Video de Bigbang  -->
         <div class="row-hd">
-            <iframe class="video_stream" modestbranding=1 data-channel="BigBang Studio" src="https://www.youtube.com/embed/41fxMGhEtpw?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            <iframe class="video_stream" modestbranding=1 data-channel="BigBang Studio" src="https://www.youtube.com/embed/6JrF3snbyMQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
         </div>
         <!--Fín Video de Bigbang  -->
 
@@ -198,7 +202,7 @@
 
                 <div class="col-md-8 offset-md-2">
                     <p class="txt-planes-desc">
-                        If you have a medium business and need a constantly updated website, we also have plans that fit your budget. And you can make your own custom plan, just contact us.
+                            We got monthly plans that adapt to your needs. If you don’t find what you need in this plans, you can contact us so we can work in a custom project. 
                     </p>
                 </div>
 
@@ -209,16 +213,16 @@
                         
                         <p class="title-plan2">Informative</p>
 
-                        <p class="txt-plan2">
-                            Responsive Design<br> 
-                            Up to 4 pages<br> 
-                            1 institucional e-mail account<br> 
-                            Social Media Integration<br> 
-                            Basic SEO<br> 
-                            Hosting and domain<br> 
-                            Maintenance (1 per month)<br> 
-                            Content updates (1 per month) 
-                        </p>
+                        <div class="txt-plan2">
+                            <p>Responsive Design</p>
+                            <p>Up to 4 pages</p>
+                            <p>1 institucional e-mail account</p>
+                            <p>Social Media Integration</p>
+                            <p>Basic SEO</p>
+                            <p>Hosting and domain</p>
+                            <p>Maintenance <br><span class="per-mont">(4 per month</span>)</p>
+                            <p>Content updates <br><span class="per-mont">(1 per month</span>)</p>    
+                        </div>
 
                         <p>
                             <span class="costo2">$449</span><br>
@@ -232,20 +236,20 @@
                         <p class="tipe-plan tp2">PRO</p>
                                 
                         <p class="title-plan">Product Catalog</p>
-            
-                        <p class="txt-plan">
-                            Responsive Design<br>
-                            Up to 8 pages<br>
-                            3 institucional e-mail account<br>
-                            Social Media Integration<br>
-                            Basic SEO + article writing (2 per month)<br>
-                            Hosting and domain<br>
-                            Maintenance (2 per month)<br>
-                            Content updates (2 per month)<br>
-                            Product updates (1 per month)<br>
-                            Blog<br>
-                            Live Chat
-                        </p>
+
+                        <div class="txt-plan">
+                            <p>Responsive Design</p>
+                            <p>Up to 8 pages</p>
+                            <p>3 institucional e-mail account</p>
+                            <p>Social Media Integration</p>
+                            <p>Basic SEO + article writing<br><span class="per-mont">(2 per month)</span></p>
+                            <p>Hosting and domain</p>
+                            <p>Maintenance <br><span class="per-mont">(2 per month)</span></p>
+                            <p>Content updates <br><span class="per-mont">(2 per month)</span></p> 
+                            <p>Product updates <br><span class="per-mont">(1 per month)</span></p>
+                            <p>Blog</p>   
+                            <p>Live Chat</p>
+                        </div>
             
                         <p>
                             <span class="costo">$1199</span><br>
@@ -260,19 +264,18 @@
                                 
                         <p class="title-plan2">E-Commerce</p>
             
-                        <p class="txt-plan2">
-                            Responsive Design<br>
-                            Up to 12 pages<br>
-                            8 institucional e-mail account<br>
-                            Social Media Integration<br>
-                            Basic SEO + article writing (4 per month)<br>
-                            Hosting and domain<br>
-                            Maintenance (4 per month)<br>
-                            Content updates (4 per month)<br>
-                            Product updates (2 per month)<br>
-                            Blog<br>
-                            Live Chat     
-                        </p>
+                        <div class="txt-plan2">
+                            <p>Responsive Design</p>
+                            <p>Up to 12 pages</p>
+                            <p>8 institucional e-mail account</p>
+                            <p>Social Media Integration</p>
+                            <p>Basic SEO + article writing <br><span class="per-mont">(4 per month</span>)</p>
+                            <p>Hosting and domain</p>
+                            <p>Maintenance <br><span class="per-mont">(4 per month</span>)</p>
+                            <p>Content updates <br><span class="per-mont">(4 per month</span>)</p>
+                            <p>Product updates <br><span class="per-mont">(2 per month</span>)</p>
+                            <p>Live Chat</p>     
+                        </div>
             
                         <p>
                             <span class="costo2">$2499</span><br>
@@ -327,12 +330,12 @@
         <!-- nos respaldan -->
         <div class="row content-respaldo">
             <div class="col-md-12 col-12">
-                <h3 class="title-respaldos h3-responsive ">Find the <span class="red">right plan</span> for you</h3> 
+                <h3 class="title-respaldos h3-responsive ">Our work is<span class="red"> supported </span> by</h3> 
             </div>
     
             <div class="col-md-8 offset-md-2">
                 <p class="txt-relpaldos">
-                    If you have a medium business and need a constantly updated website, we also have plans that fit your budget. And you can make your own custom plan, just contact us.
+                        We are part of YLAI, a department of state program, also we have had the opportunity to share and learn directly from this referents of the marketing industry.
                 </p>
             </div>
 
@@ -441,11 +444,15 @@
                                     <input type="email" id="input-email2" class="form-control" name="correo" required>
                                     <label for="input-email2" data-error="wrong" data-success="right">Insert your e-mail</label>
                                 </div>
-            
-                                <div class="form-hd form-2">
-                                    <i class="fa fa-phone ico-form"></i>
-                                    <input type="tel" id="input-phone2" class="form-control"name="telefono" required>
-                                    <label for="input-phone2" data-error="wrong" data-success="right">Phone</label>
+
+                                <div class="form-hd form-hd-select">
+                                    <select class="select-option" name="select-service">
+                                        <option class="select-item" value="">Select your service</option>
+                                        <option class="select-item" value="Basic">Basic</option>
+                                        <option class="select-item" value="Pro">Pro</option>
+                                        <option class="select-item" value="Prime">Prime</option>
+                                        <option class="select-item" value="personalizado">Personalizado</option>
+                                    </select>
                                 </div>
 
                             </div>
