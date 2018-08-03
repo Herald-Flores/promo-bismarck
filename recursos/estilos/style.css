@@ -198,11 +198,20 @@ select.form-control:not([size]):not([multiple]) {
 option{
     background:#c4c4c4;
     color: #fff;
-    margin: 40px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    line-height: 4;
 }
 
+.select-item1{
+    background: #858585; 
+}
 select:focus > option:checked{ 
     background: #858585 !important;
+}
+
+.form-hd-select::after option:checked:hover {
+    background-color: #858585 !important;
 }
 
 
@@ -733,6 +742,12 @@ input[type="checkbox"] {
     .row-hd {
         width: 121.35%;
         margin-left: -7.45rem;
+    }
+}
+@media screen and (min-width: 1520px){
+    .row-hd {
+        width: 137.5%;
+        margin-left: -13.45rem;
     }
 }
 @media screen and (min-width: 1600px){
