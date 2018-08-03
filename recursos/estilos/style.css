@@ -778,12 +778,12 @@ input[type="checkbox"] {
         margin-left: 11rem;
     }
     .cont-formulario {
-        height: 700px;
+        height: 850px;
     }
 
     .content-formulario {
         width: 420px;
-        margin-top: 7rem;
+        margin-top: 15rem;
         margin-left: 6rem;
         padding: 1.8rem 2.6rem;
     }
@@ -822,7 +822,7 @@ input[type="checkbox"] {
     }
     /* Seccion de why work whith us*/
     .cont-info{
-        height: 600px;
+        height: 685px;
     }
     .content-info {
         padding: 1.5rem 0;
@@ -847,32 +847,23 @@ input[type="checkbox"] {
     /* planes*/
     .content-plan {
         width: 1400px;
-        height: 640px;
+        height: 850px;
     }
     .plan {
         padding: 3rem 2rem;
         width: 360px;
         text-align: center;
-        height: 570px;
+        height: 820px;
         margin-top: -.5rem;
     }
     .plan2 {
         padding: 3rem 2rem;
         width: 350px;
         text-align: center;
-        height: 530px;
+        height: 740px;
         margin-top: 1.3rem;
     }
-    .plan:hover, .plan:focus{
-        height: 590px;
-        transition: 1s;
-    }
-    .plan2:hover, .plan2:focus{
-        margin-top: .3rem;
-        height: 540px;
-        transition: 1s;
-    }
-
+   
     .tipe-plan {
         font-size: 1.45em;
     }
@@ -888,10 +879,12 @@ input[type="checkbox"] {
     .txt-plan {
         font-size: 1.3em;
         font-weight: 400;
+        height: 505px;
     }
     .txt-plan2 {
         font-size: 1.2em;
         font-weight: 400;
+        height: 440px;
     }
     .costo {
         font-size: 2.3em;
