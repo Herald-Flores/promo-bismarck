@@ -141,58 +141,69 @@ input[type=email],input[type=tel]{
     margin-left: 2.2rem;
 }
 .form-hd-select{
-    margin-bottom: 1rem;
+    margin-bottom: 1rem!important;
 }
 select {
-    outline: 0;
-    box-shadow: none;
+    outline: 0!important;
+    box-shadow: none!important;
     border: 0 !important;
 }
 
 .select-option{
     background-color: #eeedf2;
-    border: none;
-    color: #bababc;
+    border: none!important;
+    color: #bababc!important;
     font-size: 14px!important;
     border-radius: 3px!important;
     width: 100%!important;
     margin-left: 0rem!important;
-    padding: .8rem 1rem!important;
+    /*padding: .8rem 1rem!important;*/
+    height: 41px;
     font-weight: 400!important;
-    line-height: 2.9rem;
-    display: block;
+    line-height: 2.9rem!important;
+    display: block!important;
 }
 
 select::-ms-expand {
-    display: none;
+    display: none!important;
 }
 /* Arrow */
-.form-hd-select::after {
-    content: '\25BC';
-    position: absolute;
-    top: .7rem;
-    right: 0;
-    bottom: 0;
-    padding: 0 .8em;
-    background-color: #eeedf2;
-    pointer-events: none;
-    margin-bottom: .3rem; 
-    margin-right: .3rem;
+select.form-control:not([size]):not([multiple]) {
+    height: calc(2.5rem + 4px);
 }
-.form-hd-select:hover::after {
-    color: #bababc;
+
+.form-hd-select::after {
+    content: '\25BC'!important;
+    position: absolute!important;
+    top: .7rem!important;
+    right: 0!important;
+    bottom: 0!important;
+    padding: 0 .8em!important;
+    background-color: #eeedf2!important;
+    pointer-events: none!important;
+    margin-bottom: .3rem!important; 
+    margin-right: .3rem!important;
+}
+
+.form-hd-select:hover::after, .form-hd-select:focus::after {
+    color: #bababc!important;
+
 }
 .form-hd-select::after {
     -webkit-transition: .25s all ease;
     -o-transition: .25s all ease;
     transition: .25s all ease;
 }
+
 option{
     background:#c4c4c4;
     color: #fff;
+    margin: 40px;
 }
 
-
+select:focus > option:checked{ 
+    background: #858585 !important;
+}
 
 
 .ico-form{
@@ -975,7 +986,7 @@ input[type="checkbox"] {
         padding: 2rem .9rem;
         width: 300px;
         text-align: center;
-        height: 570px;
+        height: 695px;
     }
     .txt-plan {
         font-size: .96em;
@@ -985,13 +996,13 @@ input[type="checkbox"] {
         padding: 2rem .9rem;
         width: 285px;
         text-align: center;
-        height: 530px;
+        height: 630px;
     }
     .txt-plan2 {
         font-size: .9em;
         font-weight: 500;
         width: 255px;
-        height: 250px;
+        height: 360px;
     }
     .footer {
         height: 88px;
@@ -1106,27 +1117,28 @@ input[type="checkbox"] {
         margin: 0 auto;
         padding-bottom: 2rem;
         width: 768px;
-        height: 1800px;
+        height: 2200px;
     }
     .plan {
         width: 460px;
         padding: 2rem 1rem;
-        height: 570px;
+        height: 710px;
         margin-top: 0rem;
     }
     .plan2 {
         width: 440px;
         padding: 2rem 1rem;
-        height: 530px;
+        height: 660px;
         margin-top: 0rem;
     }
     .txt-plan {
         width: 427px;
     }
+
     .txt-plan2 {
         font-size: .95em;
-        height: 240px;
-        width: 410px;
+        height: 380px;
+        width: 418px;
     }
     .img-logo{
         width: 70%;
@@ -1409,17 +1421,17 @@ input[type="checkbox"] {
         padding-bottom: 0rem;
         padding-top: .5rem;
         width: 300px;
-        height: 1800px;
+        height: 2060px;
     }
     .plan {
         margin-top: 0rem;
         width: 300px;
-        height: 580px;
+        height: 700px;
     }
     .plan2 {
         margin-top: 0rem;
         width: 300px;
-        height: 540px;
+        height: 630px;
    }
     .txt-plan {
         font-size: .95em;
@@ -1431,7 +1443,7 @@ input[type="checkbox"] {
         font-size: .89em;
         font-weight: 500;
         width: 270px;
-        height: 260px;
+        height: 360px;
     }
 
     .img-slide {
@@ -1490,6 +1502,9 @@ input[type="checkbox"] {
         margin-bottom: 0;
     }
 
+    .select-option2{
+        margin-bottom: 2rem !important;
+    }
     .agradecimiento {
         padding: 3.4rem .5rem;
     }

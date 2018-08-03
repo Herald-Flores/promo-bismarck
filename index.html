@@ -68,7 +68,7 @@
                                     <option class="select-item" value="Custom">Custom</option>
                                 </select>
                             </div>
-                            
+
                             <textarea class="form-control textarea1" rows="3" id="mensaje" placeholder="Enter the description of your project" name="proyect" required></textarea>                        
                             
                             <div class="content-button">
@@ -446,7 +446,7 @@
                                 </div>
 
                                 <div class="form-hd form-hd-select">
-                                    <select class="select-option" name="select-service">
+                                    <select class="select-option select-option2" name="select-service">
                                         <option class="select-item" value="">Select your plan</option>
                                         <option class="select-item" value="Basic">Basic</option>
                                         <option class="select-item" value="Pro">Pro</option>
@@ -503,15 +503,18 @@
         </div>
 
     </div>
-
-
+    
     <script src="recursos/js/jquery-3.2.1.min.js"></script>
     <script src="recursos/js/bootstrap.js"></script>
-    <script src="recursos/js/mdb.js"></script>
-
+    <script src="recursos/js/mdb.js"></script> 
+    
     <script>
         $('.carousel').carousel({
             interval: 3000
+        })
+
+       $('#myDropdown').on('show.bs.dropdown', function () {
+        // do something…
         })
     </script>
 </body>
