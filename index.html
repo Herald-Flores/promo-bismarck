@@ -229,7 +229,7 @@
                             per month
                         </p>
 
-                        <a href="#form" class="btn btn-basic">Learn more</a>
+                        <a href="#form" class="btn btn-basic" id="basic">Learn more</a>
                     </div>
 
                     <div class="plan">
@@ -256,7 +256,7 @@
                             per month
                         </p>
             
-                        <a href="#form" class="btn btn-pro">Learn more</a>
+                        <a href="#form" class="btn btn-pro" id="pro">Learn more</a>
                     </div>
 
                     <div class="plan2">
@@ -282,7 +282,7 @@
                             per month
                         </p>
             
-                        <a href="#form" class="btn btn-prime">Learn more</a>
+                        <a href="#form" class="btn btn-prime" id="prime" >Learn more</a>
                     </div>
                 </div>
             </div>
@@ -446,12 +446,12 @@
                                 </div>
 
                                 <div class="form-hd form-hd-select">
-                                    <select class="select-option select-option2" name="select-service">
-                                        <option class="select-item" disabled="disabled">Select your plan</option>
-                                        <option class="select-item" value="Basic">Basic</option>
-                                        <option class="select-item" value="Pro">Pro</option>
-                                        <option class="select-item" value="Prime">Prime</option>
-                                        <option class="select-item" value="Custom">Custom</option>
+                                    <select class="select-option select-option2" id="Select-Plan2" name="select-service">
+                                        <option disabled="disabled">Select your plan</option>
+                                        <option value="Basic">Basic</option>
+                                        <option value="Pro">Pro</option>
+                                        <option value="Prime">Prime</option>
+                                        <option value="Custom">Custom</option>
                                     </select>
                                 </div>
 
@@ -513,9 +513,57 @@
             interval: 3000
         })
 
-       $('#myDropdown').on('show.bs.dropdown', function () {
-        // do something…
-        })
+
+        $( "#basic" ).click(function() {
+
+
+            $("#Select-Plan2").val("Basic");
+
+            if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+                var $target = $(this.hash);
+                $target = $target.length && $target || $('[name=' + this.hash.slice(1) +']');
+
+                if ($target.length) {
+                    var targetOffset = $target.offset().top;
+                    $('html,body').animate({scrollTop: targetOffset}, 1000);
+                    return false;
+                }
+            }
+        });
+
+
+        $( "#pro" ).click(function() {
+            $("#Select-Plan2").val("Pro");
+
+            if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+                var $target = $(this.hash);
+                $target = $target.length && $target || $('[name=' + this.hash.slice(1) +']');
+
+                if ($target.length) {
+                    var targetOffset = $target.offset().top;
+                    $('html,body').animate({scrollTop: targetOffset}, 1000);
+                    return false;
+                }
+            }
+        });
+
+        $( "#prime" ).click(function() {
+            $("#Select-Plan2").val("Prime");
+
+            if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+                var $target = $(this.hash);
+                $target = $target.length && $target || $('[name=' + this.hash.slice(1) +']');
+
+                if ($target.length) {
+                    var targetOffset = $target.offset().top;
+                    $('html,body').animate({scrollTop: targetOffset}, 1000);
+                    return false;
+                }
+            }
+        });
+
+
+
     </script>
 </body>
 </html>
