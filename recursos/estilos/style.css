@@ -86,7 +86,7 @@ textarea{
 }
 textarea::placeholder{
     color: #bababc!important;
-    font-weight: 400;
+    font-weight: 200 !important;
 }
 
 .textarea1{
@@ -1362,6 +1362,11 @@ input[type="checkbox"] {
     }
     .form-2 .ico-form {
         margin-top: 1.1rem;
+    }
+
+    .select-option {
+        height: 52px;
+        padding-left: 1.2rem;
     }
 
     .title-work {
