@@ -46,11 +46,30 @@ body{
     background: url("../../recursos/img/portada.jpg");
     background-size: 100%;
     background-repeat: no-repeat;
-    height: 600px;
+    height: 625px;
 }
+.cont-formulario2 {
+    background: url("../../recursos/img/Version-2-Landing.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 625px;
+}
+.cont-formulario3 {
+    background: url("../../recursos/img/Version-3-Landing.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 625px;
+}
+.cont-formulario4 {
+    background: url("../../recursos/img/Construccion-landin.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 625px;
+}
+
 .content-formulario{
     background: #fff;
-    margin-top: 2.6rem;
+    margin-top: 4.6rem;
     padding: .7rem 2rem;
     padding-bottom: 1.6rem;
     width: 350px;
@@ -675,15 +694,36 @@ input[type="checkbox"] {
 
 /*Pagina de gracias*/
 .agradecimiento {
-    color: #00C851;
-    padding: 8.77rem .5rem;
+    padding: 7.27rem .5rem;
     text-align: center;
 }
 .title-1 {
+    color: #00C851;
     font-weight: 900;
     text-align: center;
     font-size: 300%;
     text-transform: uppercase;
+    margin-bottom: 2.9rem;
+
+}
+
+.txt-parrafo-prin{
+    color: #323232;
+    font-size: 1.3em;
+    font-weight: 500;
+}
+.cont-enlace-bb{
+    margin-top: 1rem;
+}
+.enlace-bigbang{
+    color: #fff;
+    font-size: 1.3em;
+    text-decoration: none;
+    margin-top: 2rem;
+}
+.enlace-bigbang:hover{
+    color: #eeeeee;
+    text-decoration: none;
 }
 .ico-check {
     font-size: 70px;
@@ -697,7 +737,6 @@ input[type="checkbox"] {
     color: #fff;
     padding: 1.2rem .5rem;
     height: 90px; 
-
 }
 .social{
     margin-top: .5rem;
@@ -1057,7 +1096,26 @@ input[type="checkbox"] {
         background-size: 100%;
         background-repeat: no-repeat;
         height: 560px;
+    }    
+    .cont-formulario2 {
+        background: url("../../recursos/img/Version-2-Tablet.jpg");
+        background-size: 100%;
+        background-repeat: no-repeat;
+        height: 560px;
+    } 
+    .cont-formulario3 {
+        background: url("../../recursos/img/Version-3-Tablet.jpg");
+        background-size: 100%;
+        background-repeat: no-repeat;
+        height: 560px;
+    } 
+    .cont-formulario4 {
+        background: url("../../recursos/img/Construccion-tablet.jpg");
+        background-size: 100%;
+        background-repeat: no-repeat;
+        height: 560px;
     }
+
     .content-formulario {
         margin-top: 1.6rem;
         height: 642px;
@@ -1320,6 +1378,30 @@ input[type="checkbox"] {
     
     .cont-formulario {
         background: url("../../recursos/img/MOVIL.jpg");
+        background-size: 100%;
+        background-repeat: no-repeat;
+        margin-left: 0rem;
+        margin-right: 0rem;
+        height: 800px;
+    } 
+    .cont-formulario2 {
+        background: url("../../recursos/img/Version-2-Movil.jpg");
+        background-size: 100%;
+        background-repeat: no-repeat;
+        margin-left: 0rem;
+        margin-right: 0rem;
+        height: 800px;
+    } 
+    .cont-formulario3 {
+        background: url("../../recursos/img/Version-3-Movil.jpg");
+        background-size: 100%;
+        background-repeat: no-repeat;
+        margin-left: 0rem;
+        margin-right: 0rem;
+        height: 800px;
+    } 
+    .cont-formulario4 {
+        background: url("../../recursos/img/Construccion-movil.jpg");
         background-size: 100%;
         background-repeat: no-repeat;
         margin-left: 0rem;
