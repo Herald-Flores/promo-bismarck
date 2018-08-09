@@ -63,7 +63,7 @@ if(!$mail->send()) {
     echo 'Message could not be sent.';
     echo 'Mailer Error: ' . $mail->ErrorInfo;
 } else {
-    header("Location: https://bigbang.studio/USA/gracias.html");
+    header("Location: https://bigbang.studio/promo-bismarck/gracias.html");
     die();
     echo 'Message has been sent';
 }
