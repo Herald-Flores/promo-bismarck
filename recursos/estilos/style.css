@@ -43,7 +43,7 @@ body{
 }
 
 .cont-formulario {
-    background: url("../../recursos/img/portada.jpg");
+    background: url("../../recursos/img/General.jpg");
     background-size: 100%;
     background-repeat: no-repeat;
     height: 625px;
@@ -784,7 +784,7 @@ input[type="checkbox"] {
 }
 @media screen and (min-width: 1330px){
     .row-hd {
-        width: 121.35%;
+        width: 121.27%;
         margin-left: -7.45rem;
     }
 }
@@ -1092,7 +1092,7 @@ input[type="checkbox"] {
     }
 
     .cont-formulario {
-        background: url("../../recursos/img/IPAD.jpg");
+        background: url("../../recursos/img/General-Ipad.jpg");
         background-size: 100%;
         background-repeat: no-repeat;
         height: 560px;
@@ -1377,7 +1377,7 @@ input[type="checkbox"] {
     }  
     
     .cont-formulario {
-        background: url("../../recursos/img/MOVIL.jpg");
+        background: url("../../recursos/img/General-Movil.jpg");
         background-size: 100%;
         background-repeat: no-repeat;
         margin-left: 0rem;
