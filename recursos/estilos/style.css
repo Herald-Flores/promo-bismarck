@@ -826,8 +826,8 @@ input[type="checkbox"] {
     }
 
     .content-formulario {
+        bottom: -200px;
         width: 420px;
-        margin-top: 2rem;
         margin-left: 6rem;
         padding: 1.8rem 2.6rem;
     }
