@@ -4,5 +4,6 @@
 ## Project Technologies
 * HTML
 * CSS
+* JavaScript
 * Bootstrap 4
 * PHP 
